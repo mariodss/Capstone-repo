@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
+import "./styles/Booking.css"
 
-const Booking = () => {
+const Booking = (props) => {
 
     const [date, setDate] = useState("");
     const [times, setTimes] = useState("");
@@ -25,7 +26,7 @@ const Booking = () => {
     return (
         <header>
             <section>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <fieldset>
                         <div>
                             <label htmlFor='book-date'>Choose Date</label>
@@ -39,7 +40,7 @@ const Booking = () => {
 
                         <div>
                             <label htmlFor='book-time'>Choose Time</label>
-                            <select id="book-time" value={times} onChange={(e.target.value)}>
+                            <select id="book-time" value={times} onChange={(e) => setTimes(e.target.value)}>
                                 <option value="">Select a Time</option>
                                 {
                                     props.availableTimes.availableTimes.map(availableTimes => {
@@ -78,7 +79,7 @@ const Booking = () => {
 
                         </div>
 
-                        <div className='btn-Submit'>
+                        <div className='btnSubmit'>
                             <input aria-label='On-Click' type='submit' value={"Make your reservation"} />
 
 

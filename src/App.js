@@ -1,9 +1,8 @@
-import Header from "./components/Header"
 import Nav from "./components/Nav"
 import Main from "./components/Main"
 import Footer from "./components/Footer"
 import './App.css';
-import Booking from "../components/Booking"
+import Menu from "./components/Menu"
 
 
 function App() {
@@ -11,15 +10,13 @@ function App() {
 
   return (
 
-    <main className="App">
-
+    <>
       <Nav />
-      <Header />
-      <Booking />
 
-
-
-    </main>
+      <Main />
+      <Menu />
+      <Footer />
+    </>
 
 
   );

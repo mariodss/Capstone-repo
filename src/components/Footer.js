@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../images/Logo.svg"
+import "./styles/Footer.css"
 
 
 const Footer = () => {
@@ -7,7 +8,7 @@ const Footer = () => {
     return (
         <footer>
             <section>
-                <div classname='company-info'>
+                <div classname='information'>
                     <img src={logo} alt='' />
                 </div>
                 <div>

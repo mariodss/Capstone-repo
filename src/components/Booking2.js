@@ -1,5 +1,5 @@
 import React from 'react';
-import Booking from './booking';
+import Booking from './Booking';
 
 
 
@@ -7,8 +7,7 @@ import Booking from './booking';
 const Booking2 = (props) => {
 
     return (
-        <Booking availableTimes={props.availableTimes} dispatch={props.dispatch}
-            SubmitForm={props.SubmitForm} />
+        <Booking availableTimes={props.availableTimes} dispatch={props.dispatch} SubmitForm={props.SubmitForm} />
 
     );
 

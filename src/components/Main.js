@@ -2,7 +2,7 @@ import React from 'react';
 import { useReducer } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import Header from './Header';
-import Booking from './booking';
+import Booking from './Booking';
 
 const Main = () => {
 
@@ -36,6 +36,11 @@ const Main = () => {
 
     }
 
+    const submitAPI = function (formData) {
+        return true;
+    }
+
+
     const initialState = { availableTimes: fetchAPI(new Date()) };
     const [state, dispatch] = useReducer(updateTimes, initialState);
 
@@ -63,8 +68,6 @@ const Main = () => {
                 <Route path='/' element={<Header />} />
 
             </Routes>
-
-
         </main>
 
     );

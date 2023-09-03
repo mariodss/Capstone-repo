@@ -1,0 +1,44 @@
+#book-date{
+    background: #bdbdbd43;
+    padding: 8px 24px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+
+
+}
+#book-time{
+
+    background: #bdbdbd43;
+    padding: 8px 24px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+
+}
+#book-guests{
+    background: #bdbdbd43;
+    padding: 8px 24px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+
+}
+
+#book-occasion{
+    background: #bdbdbd43;
+    padding: 8px 24px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+  }
+
+  .btnSubmit input{
+    padding: 12px 16px;
+    margin-top: 20px;
+    background: #495e57;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+
+  }
